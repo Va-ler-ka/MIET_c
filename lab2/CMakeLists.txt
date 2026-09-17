@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
 # п.3
-add_library(util STATIC
+add_library(util SHARED #STATIC
     util/util.cpp
     util/util.h
 )
