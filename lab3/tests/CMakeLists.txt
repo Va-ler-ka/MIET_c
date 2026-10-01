@@ -1,4 +1,4 @@
-if(NEWTON_USE_CATCH2)
+if(LAB3_USE_CATCH2)
     FetchContent_Declare(
         catch2
         GIT_REPOSITORY https://github.com/catchorg/Catch2.git
@@ -19,7 +19,7 @@ if(NEWTON_USE_CATCH2)
     catch_discover_tests(numerics_tests_catch2)
 endif()
 
-if(NEWTON_USE_GTEST)
+if(LAB3_USE_GTEST)
     set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 
     FetchContent_Declare(
