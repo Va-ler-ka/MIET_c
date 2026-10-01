@@ -1,1 +1,23 @@
+# Директории сборки CMake/Ninja — для любой лабы в репозитории
 **/build/
+**/cmake-build-*/
+
+# На случай, если кто-то случайно сконфигурирует CMake не в build/, а в корне
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+CTestTestfile.cmake
+Testing/
+
+# ОС
+.DS_Store
+Thumbs.db
+
+# Скомпилированные файлы (страховка на случай in-source сборки)
+*.o
+*.obj
+*.out
+*.exe
+*.a
+*.so
